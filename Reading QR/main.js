@@ -1,3 +1,7 @@
+// import fetch from "node-fetch";
+
+const nfetch = require("node-fetch");
+import fetch from nfetch;
 console.log("hello");
 
 // axios.get('https://cors-anywhere.herokuapp.com/https://hackattic.com/challenges/reading_qr/problem?access_token=9a818cf05c282f8c', {
@@ -18,7 +22,7 @@ console.log("hello");
 //     });
 
 
-fetch('https://hackattic.com/challenges/reading_qr/problem?access_token=9a818cf05c282f8c',)
+fetch('https://hackattic.com/challenges/reading_qr/problem?access_token=9a818cf05c282f8c')
     .then(response => {
         console.log(response);
     })
